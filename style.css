@@ -125,19 +125,23 @@ button:hover {
   cursor: pointer;
 }
 
-/* Ajuste para telas muito pequenas */
+
 @media (max-width: 480px) {
+  .fixed-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-rows: auto;              /* linhas automáticas */
+    max-width: 100%;
+    padding: 10px;
+  }
+
   .card {
+    height: 140px;
     font-size: 0.9em;
-    height: 110px;
   }
 
   .card img {
-    width: 80px;
-    height: 80px;
-  }
-
-  h1 {
-    font-size: 1.5em;
+    width: 90px;
+    height: 90px;
   }
 }
+
